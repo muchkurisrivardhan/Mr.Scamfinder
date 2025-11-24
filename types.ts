@@ -1,3 +1,4 @@
+
 export enum AnalysisType {
   TEXT = 'TEXT',
   IMAGE = 'IMAGE',
@@ -30,4 +31,12 @@ export interface FileData {
   name: string;
   type: string;
   base64: string;
+}
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  email: string;
+  avatar: string;
+  provider: 'google' | 'github' | 'apple';
 }
